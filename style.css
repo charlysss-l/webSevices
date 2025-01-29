@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+section{
+    padding: 50px 0;
+    background-color: black;
+
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    padding: 30px 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: red;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.navbar .menu li a:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+/* Home section */
+.home{
+    display: flex;
+    background: url("images/banner1.jpg") repeat  center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.2;
+}
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+.text-1{
+    font-size: 40px;
+}
+.text-2{
+    font-size: 60px;
+    color: red;
+    font-weight: 600;
+}
+.text-3{
+    font-size: 40px;
+}
+
+.home-content a{
+    display: inline-block;
+    background: red;
+    color: white;
+    font-size: 20px;
+    padding: 8px 35px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+}
+.home-content a:hover{
+    background: rgb(216, 2, 2);
+    transform: translateY(-3px); 
+}
+
+/* About Section */
+.about{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+
+}
+.title{
+    text-align: center;
+    color: red;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.column-left{
+    margin: 15px 30px;
+}
+.column-left img{
+    width: 35vw;
+    height: 75vh;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.column-right{
+    line-height: 1.8;
+    font-size: 20px;
+    text-align: justify;
+}
+.column-right h2{
+    margin-bottom: 30px;
+}
+.column-right strong{
+    color: red;
+}
+
+/* Services Section */
+.services {
+
+    padding: 80px 0;
+    text-align: center;
+    background-color: rgb(21, 7, 7);
+}
+
+.services h2 {
+    font-size: 50px;
+    color: red;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid rgba(255, 0, 0, 0.464);
+    border-radius: 12px;
+    padding: 30px;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgb(243, 54, 54);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4);
+}
+
+.card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skills{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.skills-content{
+    display: flex;
+    align-items: center;
+}
+.skills-left {
+    width: 60%;
+    padding: 0 10%;
+}
+.skills-left .text{
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.skills-left p{
+    text-align: justify;
+    font-size: 15px;
+}
+.skills-left a{
+    display: inline-block;
+    background: red;
+    color: white;
+    font-size: 15px;
+    padding: 8px 35px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+}
+.skills-left a:hover{
+    background: rgb(216, 2, 2);
+    transform: translateY(-3px); 
+}
+
+.skills-right{
+    width: 50%;
+}
+.bar{
+    margin-bottom: 15px;
+}
+.info{
+    display: flex;
+    margin-bottom:15px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills-right span{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.skills-right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: red;
+}
+.skills-right .html::before{
+    width: 95%;
+}
+.skills-right .css::before{
+    width: 98%;
+}
+.skills-right .js::before{
+    width: 88%;
+}
+.skills-right .php::before{
+    width: 80%;
+}
+.skills-right .mysql::before{
+    width: 85%;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    background: url("images/contact.jpg") repeat  center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.2;
+    
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-left, .contact-right {
+    width: 48%;
+}
+
+.contact-left .text,
+.contact-right .text {
+    font-size: 28px;
+    font-weight: 700;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    line-height: 1.6;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 5px solid red;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.row:hover {
+    transform: translateX(10px);
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.row img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.head {
+    color: rgb(225, 205, 205);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.sub-title {
+    color: white;
+    font-size: 16px;
+}
+
+/* Contact Form */
+.contact-right form {
+    background-color: rgba(30, 30, 30, 0.837);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 0, 0, 0.342);
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.field textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    background: red;
+    color: white;
+    font-size: 15px;
+    padding: 8px 35px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+}
+
+button:hover {
+    background: rgb(216, 2, 2);
+    transform: translateY(-3px); 
+}
+
+/*Footer */
+footer {
+    background-color: rgb(75, 19, 19);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: red;
+    font-size: 16px;
+}
