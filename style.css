@@ -22,12 +22,18 @@ section{
     margin: auto;
 }
 .navbar{
-    position: relative;
+    position: fixed;
     width: 100%;
     padding: 30px 0px;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
+    z-index: 1;
 }
+.navbar .sticky{
+    padding: 15px;
+    background-color: red; 
+}
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -108,10 +114,12 @@ section{
     font-family: 'Montserrat', sans-serif;
     display: flex;
 
+
 }
 .title{
     text-align: center;
     color: red;
+    text-shadow: 1px 2px black;
     font-size: 70px;
     text-transform: uppercase;
 }
@@ -126,12 +134,13 @@ section{
     margin: 15px 30px;
 }
 .column-left img{
-    width: 35vw;
-    height: 75vh;
+    width: 450px;
+    height: 500px;
     border-radius: 8px;
     object-fit: cover;
 }
 .column-right{
+    width: 55%;
     line-height: 1.8;
     font-size: 20px;
     text-align: justify;
@@ -297,12 +306,11 @@ section{
 .contact {
     display: flex;
     background: url("images/contact.jpg") repeat  center;
-    height: 100vh;
+
     min-height: 500px;
     background-size: cover;
     background-attachment:fixed;
     font-family: 'Montserrat', sans-serif;
-    color: white;
     line-height: 1.2;
     
 }
@@ -323,13 +331,15 @@ section{
     font-size: 28px;
     font-weight: 700;
     color: red;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.522);
     margin-bottom: 15px;
 }
 
 .contact-left p {
     font-size: 18px;
     text-align: justify;
-    color: white;
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 2px rgba(169, 35, 35, 0.5);
     line-height: 1.6;
 }
 
@@ -425,4 +435,178 @@ footer {
 footer p {
     color: red;
     font-size: 16px;
+}
+
+/*Responsive Media Query */
+@media (max-width: 1920px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .column-left img{
+       height: 350px;
+       height: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 30px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 35px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .column-right {
+        width: 100%;
+    }
+
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+    .skills-content {
+        flex-direction: column;
+    }
+
+    .skills-left, .skills-right {
+        width: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .home-content .text-2 {
+        font-size: 28px;
+    }
+
+    .home .home-content a {
+        font-size: 16px;
+        padding: 5px 25px;
+    }
+
+    .contact-right form {
+        width: 100%;
+    }
+
+    .fields {
+        gap: 10px;
+    }
+
+    .field input, .field textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .max-width {
+        padding: 0 20px;
+    }
+
+
+    .home .text-1 {
+        font-size: 28px;
+    }
+
+    .home .text-2 {
+        font-size: 36px;
+    }
+
+    .home .text-3 {
+        font-size: 22px;
+    }
+
+    .home-content a {
+        font-size: 16px;
+        padding: 6px 25px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .column-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .column-right {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-left, .skills-right {
+        width: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right form {
+        width:90%;
+    }
+
+    .field input, .field textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 20px;
+    }
 }
